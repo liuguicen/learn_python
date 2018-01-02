@@ -5,6 +5,7 @@ class People(object):
 
 class Student(People, object):
     def __init__(self, name, score):
+        s = self
         self.__name = name
         self.score = score
 
