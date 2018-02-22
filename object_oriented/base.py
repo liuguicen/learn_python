@@ -40,4 +40,4 @@ print(type(Student))
 
 print(type(Student.my_class_method))
 Student.my_static_method()
-print()
+print(type(5))
