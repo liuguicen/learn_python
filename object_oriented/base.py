@@ -4,6 +4,14 @@ class People(object):
 
 
 class Student(People, object):
+    @staticmethod
+    def my_static_method():
+        print("A static method has be invoke")
+
+    @classmethod
+    def my_class_method(cls):
+        print("I am a class method")
+
     def __init__(self, name, score):
         s = self
         self.__name = name
@@ -15,13 +23,21 @@ class Student(People, object):
     def __private_method(self):
         print("I am a private method")
 
+#
+# xm = Student('xiaoming', 100)
+#
+# xm._Student__private_method = xm.print
+#
+# def fu():
+#     print('I am a external function')
+#
+# xm.fu = fu
+# xm.fu()
 
-xm = Student('xiaoming', 100)
+s = Student("xiaoming", 12)
 
-xm._Student__private_method = xm.print
+print(type(Student))
 
-def fu():
-    print('I am a external function')
-
-xm.fu = fu
-xm.fu()
+print(type(Student.my_class_method))
+Student.my_static_method()
+print()
