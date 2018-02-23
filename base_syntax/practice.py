@@ -51,8 +51,6 @@ from package_test import module
 import numpy
 
 module.test()
-module._private_test()
-
 
 print('hahaha')
 

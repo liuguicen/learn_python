@@ -1,5 +1,5 @@
 
-"我是这个module文件的文档，\n目前我没有任何内容。"
+"""我是这个module文件的文档，\n目前我没有任何内容。"""
 
 import sys
 
@@ -15,6 +15,7 @@ def test():
 
 
 def _private_test():
+    print("s")
     print('I am a private function which is should not to be reference')
 
 
