@@ -82,8 +82,11 @@ class Weekday(Enum):
 
 
 print(Weekday.Fri)
-print(Weekday(1))
 print(Weekday(2))
+print(Weekday(1))
 print(Weekday(1) == Weekday.Mon)
 print(Weekday(1) == Weekday.Sun)
 print(Weekday.Sat.name + ':' + str(Weekday.Sat.value))
+print('xiaoming'.join(' is a good boy'))
+
+pow(3, 5)
